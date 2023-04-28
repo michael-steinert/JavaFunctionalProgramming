@@ -6,11 +6,11 @@ public class Callbacks {
   public static void main(String[] args) {
 
     hello1("Michael", null, value -> {
-      System.out.println("LastName not provided for: " + value);
+      System.out.println("Last Name not provided for: " + value);
     });
 
     hello2("Michael", null, () -> {
-      System.out.println("LastName not provided");
+      System.out.println("Last Name not provided");
     });
   }
 

@@ -66,10 +66,10 @@
 import java.util.function.Function;
 
 public class Main {
-    public static void main(String[] args) {
-        Function<Integer, Integer> square = x -> x * x;
-        System.out.println(square.apply(4));  // 16
-    }
+  public static void main(String[] args) {
+    Function<Integer, Integer> square = x -> x * x;
+    System.out.println(square.apply(4));
+  }
 }
 ```
 
@@ -90,16 +90,16 @@ import java.util.Arrays;
 import java.util.List;
 
 public class LambdaMethodReferenceExample {
-    public static void main(String[] args) {
-        List<Integer> numbers = Arrays.asList(1, 2, 3);
-        // Lambda Expression
-        numbers.stream().filter(number -> number % 2 == 0).forEach(System.out::println);
-        // Method Reference
-        numbers.stream().filter(LambdaMethodReferenceExample::isEven).forEach(System.out::println);
-    }
-    private static boolean isEven(int number) {
-        return number % 2 == 0;
-    }
+  public static void main(String[] args) {
+    List<Integer> numbers = Arrays.asList(1, 2, 3);
+    // Lambda Expression
+    numbers.stream().filter(number -> number % 2 == 0).forEach(System.out::println);
+    // Method Reference
+    numbers.stream().filter(LambdaMethodReferenceExample::isNumberEven).forEach(System.out::println);
+  }
+  private static boolean isNumberEven(int number) {
+    return number % 2 == 0;
+  }
 }
 ```
 
@@ -115,11 +115,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
-        List<String> names = new ArrayList<>();
-        names.add("Bruno");
-        names.add("Michael");
-        names.forEach(name -> System.out.println(name));
-    }
+  public static void main(String[] args) {
+    List<String> names = new ArrayList<>();
+    names.add("Bruno");
+    names.add("Michael");
+    names.forEach(name -> System.out.println(name));
+  }
 }
 ```

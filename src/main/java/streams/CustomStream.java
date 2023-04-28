@@ -4,14 +4,13 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
-public class _Stream {
+public class CustomStream {
   public static void main(String[] args) {
 
     List<Person> personList = List.of(
         new Person("Michael", Person.Gender.MALE),
-        new Person("Magnus", Person.Gender.MALE),
+        new Person("Bruno", Person.Gender.MALE),
         new Person("Marie", Person.Gender.FEMALE),
         new Person("Melanie", Person.Gender.FEMALE));
 

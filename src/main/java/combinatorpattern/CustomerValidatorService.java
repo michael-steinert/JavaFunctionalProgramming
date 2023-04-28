@@ -18,8 +18,7 @@ public class CustomerValidatorService {
   }
 
   public boolean isValid(Customer customer) {
-    return isEmailValid(customer.getEmail()) &&
-        isPhoneNumberValid(customer.getPhoneNumber()) &&
-        isAdult(customer.getDob());
+    return isEmailValid(customer.getEmail()) && isPhoneNumberValid(customer.getPhoneNumber())
+        && isAdult(customer.getDob());
   }
 }

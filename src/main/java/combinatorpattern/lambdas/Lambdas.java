@@ -10,9 +10,7 @@ public class Lambdas {
       }
       return name.toUpperCase();
     };
-
     String upperCasedName = upperCaseName.apply("Michael");
-
     System.out.println(upperCasedName);
   }
 }
