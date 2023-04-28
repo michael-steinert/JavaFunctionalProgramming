@@ -32,25 +32,9 @@ public class Main {
         .forEach(person -> System.out.println(person));
   }
 
-  static class Person {
-    private final String name;
-    private final Gender gender;
-
+  private static record Person(String name, Gender gender) {
     enum Gender {
       MALE, FEMALE
-    }
-
-    public Person(String name, Gender gender) {
-      this.name = name;
-      this.gender = gender;
-    }
-
-    @Override
-    public String toString() {
-      return "Person{" +
-          "name='" + name + '\'' +
-          ", gender=" + gender +
-          '}';
     }
   }
 }

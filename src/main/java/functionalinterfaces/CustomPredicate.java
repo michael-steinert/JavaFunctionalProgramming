@@ -8,7 +8,7 @@ public class CustomPredicate {
     System.out.println(isPhoneNumberValid(phoneNumber));
     System.out.println(isPhoneNumberValidPredicate.test(phoneNumber));
     System.out.println(isPhoneNumberValidPredicate.and(containsPhoneNumberTwoPredicate).test(phoneNumber));
-
+    System.out.println(isPhoneNumberValidPredicate.or(containsPhoneNumberTwoPredicate).test(phoneNumber));
   }
 
   static boolean isPhoneNumberValid(String phoneNumber) {
@@ -19,5 +19,4 @@ public class CustomPredicate {
       && phoneNumber.length() == 9;
 
   static Predicate<String> containsPhoneNumberTwoPredicate = phoneNumber -> phoneNumber.contains("2");
-
 }

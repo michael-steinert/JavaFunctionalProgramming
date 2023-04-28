@@ -23,13 +23,12 @@ public class CustomFunction {
     return number + 1;
   }
 
-  // Function<Input, Output> functionName = Parameter -> Logic
+  // Function<Input, Output> name = Parameter -> Logic
   private static Function<Integer, Integer> incrementByOneFunction = number -> number + 1;
 
   private static Function<Integer, Integer> multipleByTenFunction = number -> number * 10;
 
-  // BiFunction<Input1, Input2, Output> functionName = (Parameter1, Parameter2) ->
-  // Logic
+  // BiFunction<Input1, Input2, Output> name = (Parameter1, Parameter2) -> Logic
   private static BiFunction<Integer, Integer, Integer> incrementFirstNumberAndMultipleWithSecondNumberFunction = (
       number1, number2) -> (number1 + 1) * number2;
 }
