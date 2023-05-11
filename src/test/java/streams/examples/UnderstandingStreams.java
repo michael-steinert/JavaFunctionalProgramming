@@ -30,11 +30,11 @@ public class UnderstandingStreams {
             .stream()
             .filter(car -> {
               System.out.println("filter car " + car);
-              return car.getPrice() < 10000;
+              return car.price() < 10000;
             })
             .map(car -> {
               System.out.println("mapping car " + car);
-              return car.getPrice();
+              return car.price();
             })
             .map(price -> {
               System.out.println("mapping price " + price);

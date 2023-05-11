@@ -9,8 +9,8 @@ import java.util.stream.Stream;
 
 public class WorkingWithStreams {
 
-    @Test
-    void steams() {
-        List<String> names = List.of("Amigoscode", "Alex", "Zara");
-    }
+  @Test
+  void steams() {
+    List<String> names = List.of("Michael", "Alex", "Zara");
+  }
 }

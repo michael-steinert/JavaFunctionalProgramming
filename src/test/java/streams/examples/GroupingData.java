@@ -19,15 +19,13 @@ public class GroupingData {
   @Test
   public void groupingAndCounting() throws Exception {
     List<String> names = List.of(
-        "John",
-        "John",
-        "Mariam",
-        "Alex",
-        "Mohammado",
-        "Mohammado",
-        "Vincent",
-        "Alex",
-        "Alex");
+        "Michael",
+        "Michael",
+        "Bruno",
+        "Bella",
+        "Marie",
+        "Marie",
+        "Vincent");
   }
 
 }
