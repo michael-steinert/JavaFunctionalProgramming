@@ -1,4 +1,4 @@
-package combinatorpattern.callbacks;
+package callbacks;
 
 import java.util.function.Consumer;
 

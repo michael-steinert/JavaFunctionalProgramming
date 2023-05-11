@@ -4,19 +4,21 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.function.Function;
 
-public interface CustomerValidator extends Function<Customer, CustomerValidator.ValidationResult> {
+import combinatorpattern.CustomerValidator.ValidationResult;
+
+public interface CustomerValidator extends Function<Customer, ValidationResult> {
 
   static CustomerValidator isEmailValid() {
-    return customer -> customer.getEmail().contains("@") ? ValidationResult.SUCCESS : ValidationResult.EMAIL_NOT_VALID;
+    return customer -> customer.email().contains("@") ? ValidationResult.SUCCESS : ValidationResult.EMAIL_NOT_VALID;
   }
 
   static CustomerValidator isPhoneNumberValid() {
-    return customer -> customer.getPhoneNumber().startsWith("0") ? ValidationResult.SUCCESS
+    return customer -> customer.phoneNumber().startsWith("0") ? ValidationResult.SUCCESS
         : ValidationResult.PHONE_NUMBER_NOT_VALID;
   }
 
   static CustomerValidator isAnAdult() {
-    return customer -> Period.between(customer.getDob(), LocalDate.now()).getYears() > 18 ? ValidationResult.SUCCESS
+    return customer -> Period.between(customer.dob(), LocalDate.now()).getYears() > 18 ? ValidationResult.SUCCESS
         : ValidationResult.IS_NOT_AN_ADULT;
   }
 

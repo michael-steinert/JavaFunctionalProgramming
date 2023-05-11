@@ -1,4 +1,4 @@
-package combinatorpattern.lambdas;
+package lambdas;
 
 import java.util.function.Function;
 
