@@ -49,11 +49,10 @@
 - A Pure Function is a Function that, given the same Input, always returns the same Output and has no Side Effects
 - This makes Pure Functions predictable, easy to understand and easy to test
 
-## Java Stream API
+## Java Stream
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/29623199/104067869-3b1c7680-5204-11eb-9989-6340727172f2.PNG" alt="Stream API Overview" />
-</P>
+- Java Streams are a functional and concise Abstraction for processing Data Collections (like Lists, Maps, Sets and Arrays)
+- Java Streams enable high-level Operations on the Data as a whole, promoting Code Readability and Efficiency
 
 ## Lambdas
 

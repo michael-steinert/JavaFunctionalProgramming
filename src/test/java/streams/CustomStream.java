@@ -12,7 +12,7 @@ public class CustomStream {
         new Person("Michael", Person.Gender.MALE),
         new Person("Bruno", Person.Gender.MALE),
         new Person("Marie", Person.Gender.FEMALE),
-        new Person("Melanie", Person.Gender.FEMALE));
+        new Person("Bella", Person.Gender.FEMALE));
 
     Function<Person, String> personStringFunction = person -> person.name;
 

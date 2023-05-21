@@ -9,14 +9,11 @@ public class JoiningStrings {
 
   @Test
   public void joiningStrings() throws Exception {
-    List<String> names = List.of("anna", "john", "marcos", "helena", "yasmin");
-    // "Anna, John, Marcos, Helena, Yasmin"
+    List<String> names = List.of("Michael", "Bruno", "Bella", "Marie");
   }
 
   @Test
   public void joiningStringsWithStream() throws Exception {
-    List<String> names = List.of("anna", "john", "marcos", "helena", "yasmin");
-    // "Anna, John, Marcos, Helena, Yasmin"
+    List<String> names = List.of("Michael", "Bruno", "Bella", "Marie");
   }
-
 }

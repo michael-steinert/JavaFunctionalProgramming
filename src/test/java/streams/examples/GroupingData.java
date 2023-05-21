@@ -24,8 +24,7 @@ public class GroupingData {
         "Bruno",
         "Bella",
         "Marie",
-        "Marie",
-        "Vincent");
+        "Marie");
   }
 
 }

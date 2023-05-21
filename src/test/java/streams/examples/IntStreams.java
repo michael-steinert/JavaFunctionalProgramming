@@ -14,7 +14,7 @@ public class IntStreams {
   public void range() throws Exception {
   }
 
-  // Loop through people using IntStream
+  // Loop through People using IntStream
   @Test
   public void rangeIteratingLists() throws Exception {
     List<Person> people = MockData.getPeople();

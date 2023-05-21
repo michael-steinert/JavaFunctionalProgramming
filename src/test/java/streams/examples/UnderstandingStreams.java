@@ -29,16 +29,16 @@ public class UnderstandingStreams {
         MockData.getCars()
             .stream()
             .filter(car -> {
-              System.out.println("filter car " + car);
+              System.out.println("Filter Car " + car);
               return car.price() < 10000;
             })
             .map(car -> {
-              System.out.println("mapping car " + car);
+              System.out.println("Mapping Car " + car);
               return car.price();
             })
             .map(price -> {
-              System.out.println("mapping price " + price);
-              return price + (price * .14);
+              System.out.println("Mapping Price " + price);
+              return price + (price * 0.14);
             })
             .collect(Collectors.toList()));
   }

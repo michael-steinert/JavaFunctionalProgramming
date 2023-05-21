@@ -11,9 +11,9 @@ import java.util.stream.Collectors;
 public class TransformationsWithFlatMap {
 
   private static final List<List<String>> arrayListOfNames = List.of(
-      List.of("Mariam", "Alex", "Ismail"),
-      List.of("John", "Alesha", "Andre"),
-      List.of("Susy", "Ali"));
+      List.of("Michael", "Bruno"),
+      List.of("Bella", "Marie"),
+      List.of("Buddy"));
 
   @BeforeEach
   void setUp() {
@@ -22,19 +22,17 @@ public class TransformationsWithFlatMap {
 
   @Test
   public void withoutFlatMap() throws Exception {
-    // [Mariam, Alex, Ismail, John, Alesha, Andre, Susy, Ali]
     List<String> names = new ArrayList<>();
   }
 
   @Test
   public void withFlatMap() throws Exception {
-    // [Mariam, Alex, Ismail, John, Alesha, Andre, Susy, Ali]
   }
 
   @Test
   public void flatMapWithOptionals() {
     List<Optional<String>> optionals = List.of(
-        Optional.of("Amigos"),
-        Optional.of("Code"));
+        Optional.of("Optional"),
+        Optional.of("Name"));
   }
 }
