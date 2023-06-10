@@ -23,16 +23,25 @@ public class TransformationsWithFlatMap {
   @Test
   public void withoutFlatMap() throws Exception {
     List<String> names = new ArrayList<>();
+    // arrayListOfNames.forEach(currentNames -> {
+    // names.addAll(currentNames);
+    // });
+    arrayListOfNames.forEach(names::addAll);
+    System.out.println("Names in one List: %s".formatted(names));
   }
 
   @Test
   public void withFlatMap() throws Exception {
+    List<String> names = arrayListOfNames.stream().flatMap(List::stream).collect(Collectors.toList());
+    System.out.println("Names in one List: %s".formatted(names));
   }
 
   @Test
   public void flatMapWithOptionals() {
     List<Optional<String>> optionals = List.of(
-        Optional.of("Optional"),
-        Optional.of("Name"));
+        Optional.of("firstOptional"),
+        Optional.of("secondOptional"));
+    List<String> strings = optionals.stream().flatMap(Optional::stream).collect(Collectors.toList());
+    System.out.println("Strings in one List: %s".formatted(strings));
   }
 }

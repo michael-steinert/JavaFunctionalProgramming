@@ -23,7 +23,7 @@ public class Sorting {
   }
 
   @Test
-  public void sortingSteamOfObjets() throws IOException {
+  public void sortingSteamOfObjects() throws IOException {
     List<Person> people = MockData.getPeople();
   }
 
@@ -31,5 +31,4 @@ public class Sorting {
   public void topTenMostExpensiveBlueCars() throws IOException {
     List<Car> cars = MockData.getCars();
   }
-
 }

@@ -1,12 +1,12 @@
 package streams.beans;
 
-public class PersonDTO {
+public class PersonDto {
 
   private final Integer id;
   private final String name;
   private final Integer age;
 
-  public PersonDTO(Integer id, String name, Integer age) {
+  public PersonDto(Integer id, String name, Integer age) {
     this.id = id;
     this.name = name;
     this.age = age;
@@ -33,8 +33,8 @@ public class PersonDTO {
         '}';
   }
 
-  public static PersonDTO map(Person person) {
-    return new PersonDTO(
+  public static PersonDto mapToDto(Person person) {
+    return new PersonDto(
         person.getId(),
         person.getFirstName(),
         person.getAge());

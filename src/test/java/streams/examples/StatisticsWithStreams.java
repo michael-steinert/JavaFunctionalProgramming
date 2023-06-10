@@ -39,5 +39,4 @@ public class StatisticsWithStreams {
   public void statistics() throws Exception {
     List<Car> cars = MockData.getCars();
   }
-
 }

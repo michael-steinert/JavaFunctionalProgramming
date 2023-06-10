@@ -26,5 +26,4 @@ public class GroupingData {
         "Marie",
         "Marie");
   }
-
 }
