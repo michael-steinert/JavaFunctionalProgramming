@@ -1,12 +1,13 @@
 package streams.examples;
 
-import streams.beans.Car;
-import streams.mockdata.MockData;
-import org.junit.jupiter.api.Test;
-
 import java.math.BigDecimal;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
+
+import org.junit.jupiter.api.Test;
+
+import streams.beans.Car;
+import streams.mockdata.MockData;
 
 public class StatisticsWithStreams {
 
