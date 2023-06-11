@@ -1,7 +1,6 @@
 package streams.beans;
 
 public class PersonDto {
-
   private final Integer id;
   private final String name;
   private final Integer age;

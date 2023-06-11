@@ -1,7 +1,6 @@
 package streams.beans;
 
 public class Car {
-
   private final Integer id;
   private final String make;
   private final String model;

@@ -1,9 +1,9 @@
 package streams.examples;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Comparator;
 import java.util.List;
+
+import org.junit.jupiter.api.Test;
 
 public class MinMax {
 

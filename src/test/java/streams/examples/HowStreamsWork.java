@@ -1,11 +1,12 @@
 package streams.examples;
 
-import streams.beans.Person;
-import streams.mockdata.MockData;
-import org.junit.jupiter.api.Test;
-
 import java.util.List;
 import java.util.stream.Collectors;
+
+import org.junit.jupiter.api.Test;
+
+import streams.beans.Person;
+import streams.mockdata.MockData;
 
 public class HowStreamsWork {
   @Test

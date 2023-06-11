@@ -1,13 +1,14 @@
 package streams.examples;
 
-import streams.beans.Car;
-import streams.mockdata.MockData;
-import org.junit.jupiter.api.Test;
-
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+
+import org.junit.jupiter.api.Test;
+
+import streams.beans.Car;
+import streams.mockdata.MockData;
 
 public class GroupingData {
 

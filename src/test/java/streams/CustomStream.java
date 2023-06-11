@@ -33,7 +33,7 @@ public class CustomStream {
     System.out.println(allMatchContainsMales);
   }
 
-  private static record Person(String name, Gender gender) {
+  public static record Person(String name, Gender gender) {
     enum Gender {
       MALE, FEMALE
     }
